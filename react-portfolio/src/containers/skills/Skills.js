@@ -1,14 +1,15 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { illustration, skillsSection } from "../../portfolio";
+import { Fade } from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import Typical from 'react-typical'
 
 export default function Skills() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!skillsSection.display) {
     return null;
   }
@@ -41,7 +42,20 @@ export default function Skills() {
                   : "subTitle skills-text-subtitle"
               }
             >
-              {skillsSection.subTitle}
+              <h3>
+                <Typical loop={Infinity}
+                  steps={[
+                    "Ethusiastic Dev 🛑",
+                    1000,
+                    "Full Stack Developer 💻",
+                    1000,
+                    "Front End Developer 💻",
+                    1000,
+                    "React Developer 💻",
+                    1000,
+                  ]}
+                />
+              </h3>
             </p>
             <SoftwareSkill />
             <div>
