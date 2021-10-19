@@ -6,6 +6,7 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
+import me from '../../assets/images/me.JPG'
 
 import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
@@ -27,6 +28,7 @@ export default function Greeting() {
                 {" "}
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
+                <img className='propic' src={me} />
               </h1>
               <p
                 className={

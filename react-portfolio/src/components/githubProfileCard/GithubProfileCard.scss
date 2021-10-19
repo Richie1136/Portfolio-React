@@ -9,6 +9,8 @@
   height: auto;
   box-shadow: $lightBoxShadow 0 30px 30px -30px;
   transition: all 0.3s ease-out;
+  background-image: url('../../assets/images/me.JPG');
+
 }
 
 .profile-image:hover {
@@ -42,6 +44,7 @@
   flex: 20%;
   max-width: 100%;
   height: auto;
+  background-image: url('../../assets/images/me.JPG');
 }
 
 .bio-text {
