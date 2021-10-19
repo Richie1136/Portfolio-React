@@ -7,8 +7,6 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  blogSection,
-  talkSection,
   achievementSection,
   bigProjects
 } from "../../portfolio";
@@ -18,8 +16,6 @@ const Header = () => {
   const viewExperience = workExperiences.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
   const viewProjects = bigProjects.display
 
   return (

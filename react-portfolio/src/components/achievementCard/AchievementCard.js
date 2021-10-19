@@ -1,16 +1,15 @@
 import React from "react";
 import "./AchievementCard.scss";
 
-export default function AchievementCard({ cardInfo, isDark }) {
+const AchivementCard = ({ cardInfo, isDark }) => {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL for ${name} not found`);
       return;
     }
-    var win = window.open(url, "_blank");
-    win.focus();
+    let win = window.open(url, "_blank")
+    win.focus()
   }
-
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
       <div className="certificate-image-div">
@@ -25,5 +24,7 @@ export default function AchievementCard({ cardInfo, isDark }) {
         </p>
       </div>
     </div>
-  );
+  )
 }
+
+export default AchivementCard
