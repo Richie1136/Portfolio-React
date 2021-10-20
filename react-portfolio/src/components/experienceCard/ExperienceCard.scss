@@ -1,30 +1,42 @@
-@import "../../_globalColor";
+// @import "../../_globalColor";
 
 .experience-card {
   position: relative;
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  // background-color: $lightBackground2;
+  background-color: rgb(255, 255, 255);
+  // box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  box-shadow: rgba(0,0,0,0.2) 0px 10px 30px -15px;
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  // border: 1px solid $lightBorder1;
+  border: 1px solid rgba(211,211,211,0.397);
 }
 
 .experience-card-dark {
   position: relative;
-  background-color: $darkBackground;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  // background-color: $darkBackground;
+  background-color: #171c28;
+  // box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  box-shadow: rgba(0,0,0,0.2) 0px 10px 30px -15px;
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  // border: 1px solid $lightBorder1;
+  border: 1px solid rgba(211,211,211,0.397);
 }
 
 .experience-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  // box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: rgba(0,0,0,0.2) 0px 20px 30px -10px;
 }
 
 .experience-banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 150%;
-  background: $experienceCardBannerLG;
+  // background: $experienceCardBannerLG;
+  background: linear-gradient((
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5)
+  ));
+  // background: linear-gradient(blue, red);
   border-radius: 10px 10px 0px 0px;
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
@@ -39,7 +51,11 @@
 
 .experience-blurred_div {
   position: absolute;
-  background: $experienceCardBlurredDivLG;
+  // background: $experienceCardBlurredDivLG;
+  background: linear-gradient((
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.2)
+  ));
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -68,7 +84,8 @@
   text-align: center;
   padding: 1.5rem;
   margin: 0;
-  color: $lightBackground1;
+  // color: $lightBackground1;
+  color: #fff;
   font-size: 25px;
   text-align: center;
   font-weight: 700;
@@ -87,13 +104,15 @@
   margin-right: auto;
   width: 8rem;
   height: 8rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  // box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 }
 
 .experience-text-role {
   text-align: center;
-  color: $textColor;
+  // color: $textColor;
+  color: #000000;
   font-weight: 700;
   font-size: 25px;
   margin: 0px;
@@ -101,11 +120,13 @@
   line-height: normal;
 }
 .dark-mode-text {
-  color: $textColorDark !important;
+  // color: $textColorDark !important;
+  color: #ffffff !important;
 }
 .experience-text-date {
   text-align: center;
-  color: $textColor;
+  // color: $textColor;
+  color: #000000;
   font-size: 20px;
   margin: 0px;
   padding-top: 1rem;

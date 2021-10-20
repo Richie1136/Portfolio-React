@@ -1,4 +1,3 @@
-@import "../../_globalColor";
 
 .skills-main-div {
   display: flex;
@@ -23,7 +22,8 @@
   font-weight: 400;
 }
 .subTitle {
-  color: $subTitle;
+  // color: $subTitle;
+  color: #868e96;
 }
 
 /* Media Query */

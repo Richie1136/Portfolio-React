@@ -1,13 +1,10 @@
-@import "../../_globalColor";
-
 .card-image {
   max-width: 100%;
   height: auto;
   width: 250px;
-  height: 193.80px;
+  height: 193.8px;
 }
 .card-title {
-  // color: $titleColor;
   color: #000000;
   font-size: 22px;
   line-height: 24px;
@@ -15,18 +12,16 @@
   margin: 15px 0 0 0;
 }
 .card-subtitle {
-  // color: $cardSubtitle;
   color: #868e96;
   font-size: 17px;
   line-height: 1.5rem;
 }
 .certificate-card {
-  background-color: white;
-  // box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  box-shadow: rgba(0,0,0,0.2) 0px 10px 30px -15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
   padding: 1.5rem;
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid rgba(211, 211, 211, 0.397);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -35,14 +30,10 @@
   text-align: center;
 }
 .certificate-card:hover {
-  // box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-  box-shadow: rgba(0,0,0,0.2) 0px 20px 30px -10px;
-
-  
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
 }
 .dark-mode.certificate-card:hover {
-  // box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
-  box-shadow: rgba(255,255,255,0.2) 0px 20px 30px -10px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 20px 30px -10px;
 }
 .certificate-image-div {
   position: relative;
@@ -62,8 +53,8 @@
   justify-content: center;
 }
 .certificate-card-footer span.certificate-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
+  background: #55198b;
+  color: #fff;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;
@@ -79,5 +70,5 @@
   transition: 0.2s ease-in;
 }
 span.certificate-tag:hover {
-  background: $buttonHover;
+  background: #8c43ce;
 }

@@ -1,4 +1,4 @@
-@import "../../_globalColor";
+// @import "../../_globalColor";
 
 .social-media-div {
   font-size: 2em;
@@ -9,7 +9,8 @@
 }
 
 .icon-button i {
-  color: $textColorDark;
+  // color: $textColorDark;
+  color: #ffffff;
   border-radius: 2.6rem;
   cursor: pointer;
   display: inline-block;
@@ -29,43 +30,31 @@
 }
 
 .facebook i {
-  background-color: $faceBook;
+  // background-color: $faceBook;
+  background-color: #3b5998;
 }
 
 .linkedin i {
-  background-color: $linkedin;
+  // background-color: $linkedin;
+  background-color: #0e76a8;
 }
 
 .github i {
-  background-color: $github;
-}
-
-.gitlab i {
-  background-color: $gitlab;
+  // background-color: $github;
+  background-color: #333;
 }
 
 .google i {
-  background-color: $google;
+  // background-color: $github;
+  background-color: #ea4335;
 }
 
 .twitter i {
-  background-color: $twitter;
-}
-
-.medium i {
-  background-color: $medium;
-}
-
-.stack-overflow i {
-  background-color: $stackoverflow;
-}
-
-.kaggle i {
-  background-color: $kaggle;
+  background-color: #1da1f2;
 }
 
 .instagram i {
-  background-color: $instagram;
+  background-color: #c13584;
 }
 
 /* Hover Transition */
@@ -79,7 +68,7 @@
 .stack-overflow i:hover,
 .kaggle i:hover,
 .medium i:hover {
-  background-color: $textColor;
+  background-color: #000000;
 }
 
 /* Media Query */

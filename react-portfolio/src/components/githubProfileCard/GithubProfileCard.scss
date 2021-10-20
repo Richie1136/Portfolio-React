@@ -1,13 +1,15 @@
-@import "../../_globalColor";
+// @import "../../_globalColor";
 
 .profile-image {
   border-radius: 50%;
-  border: 0.5rem solid $githubProfileCardBorder;
+  // border: 0.5rem solid $githubProfileCardBorder;
+  border: 0.5rem solid #6c63ff;
   margin-left: auto;
   width: 100%;
   max-width: 350px;
   height: auto;
-  box-shadow: $lightBoxShadow 0 30px 30px -30px;
+  // box-shadow: $lightBoxShadow 0 30px 30px -30px;
+  box-shadow: rgba(0,0,0,0.1) 0 30px 30px -30px;
   transition: all 0.3s ease-out;
   background-image: url('../../assets/images/me.JPG');
 
@@ -24,7 +26,8 @@
 }
 
 .location-div {
-  text-shadow: $githubProfileCardLocationTS;
+  // text-shadow: $githubProfileCardLocationTS;
+  text-shadow: #ffebcd;
 }
 
 .opp-div {
@@ -58,7 +61,8 @@
 }
 
 .subTitle {
-  color: $subTitle;
+  // color: $subTitle;
+  color: #868e96;
 }
 
 @media (max-width: 768px) {
@@ -96,7 +100,8 @@
   }
 
   .profile-image:hover {
-    box-shadow: $lightBoxShadow 0 50px 50px -50px;
+    // box-shadow: $lightBoxShadow 0 50px 50px -50px;
+    box-shadow: rgba(0,0,0,0.1) 0 50px 50px -50px;
     transition: 0.3s ease-out;
   }
 
