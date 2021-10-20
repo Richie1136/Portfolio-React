@@ -7,20 +7,23 @@
   height: 193.80px;
 }
 .card-title {
-  color: $titleColor;
+  // color: $titleColor;
+  color: #000000;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
 .card-subtitle {
-  color: $cardSubtitle;
+  // color: $cardSubtitle;
+  color: #868e96;
   font-size: 17px;
   line-height: 1.5rem;
 }
 .certificate-card {
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  background-color: white;
+  // box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  box-shadow: rgba(0,0,0,0.2) 0px 10px 30px -15px;
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
@@ -32,10 +35,14 @@
   text-align: center;
 }
 .certificate-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  // box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: rgba(0,0,0,0.2) 0px 20px 30px -10px;
+
+  
 }
 .dark-mode.certificate-card:hover {
-  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+  // box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+  box-shadow: rgba(255,255,255,0.2) 0px 20px 30px -10px;
 }
 .certificate-image-div {
   position: relative;
