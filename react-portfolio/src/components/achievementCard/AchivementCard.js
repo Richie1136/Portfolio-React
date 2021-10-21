@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 const AchivementCard = ({ cardInfo }) => {
   function openUrlInNewTab(url) {
     if (!url) {

@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import "./Footer.scss";
+import "./Footer.css";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function Footer() {
+const Footer = () => {
   const { isDark } = useContext(StyleContext);
   return (
     <Fade bottom duration={1000} distance="5px">
@@ -22,3 +22,5 @@ export default function Footer() {
     </Fade>
   );
 }
+
+export default Footer

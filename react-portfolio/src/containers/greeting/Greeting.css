@@ -1,5 +1,3 @@
-// @import "../../_globalColor";
-
 .main {
   width: 90%;
   padding: 20px 10px;
@@ -20,7 +18,7 @@
 .propic {
   border-radius: 50%;
   width: 100%;
-  border: .5rem solid blue;
+  border: 0.5rem solid blue;
   max-width: 350px;
   margin-left: 0px;
   height: auto;
@@ -30,7 +28,6 @@
 }
 
 .subTitle {
-  // color: $subTitle !important;
   color: #868e96 !important;
 }
 
@@ -50,7 +47,6 @@
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
-  // color: $textColor !important;
   color: #000000 !important;
 }
 

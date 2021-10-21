@@ -1,9 +1,10 @@
 import React from "react";
-import "./Education.scss";
+import "./Education.css";
 import EducationCard from "../../components/educationCard/EducationCard";
-import {educationInfo} from "../../portfolio";
+import { educationInfo } from "../../portfolio";
 
-export default function Education() {
+
+const Education = () => {
   if (educationInfo.display) {
     return (
       <div className="education-section" id="education">
@@ -18,3 +19,5 @@ export default function Education() {
   }
   return null;
 }
+
+export default Education
