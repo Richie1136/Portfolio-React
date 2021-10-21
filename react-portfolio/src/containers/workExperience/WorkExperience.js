@@ -1,12 +1,13 @@
-import React, {useContext} from "react";
-import "./WorkExperience.scss";
+import React, { useContext } from "react";
+import "./WorkExperience.css";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
-import {workExperiences} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { workExperiences } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function WorkExperience() {
-  const {isDark} = useContext(StyleContext);
+
+const WorkExperience = () => {
+  const { isDark } = useContext(StyleContext);
   if (workExperiences.display) {
     return (
       <div id="experience">
@@ -39,4 +40,8 @@ export default function WorkExperience() {
     );
   }
   return null;
+
 }
+
+export default WorkExperience
+
