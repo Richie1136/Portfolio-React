@@ -16,15 +16,16 @@
 }
 
 .propic {
-  border-radius: 50%;
+  border-radius: 80%;
   width: 100%;
   border: 0.5rem solid blue;
-  max-width: 350px;
-  margin-left: 0px;
+  max-width: 300px;
+  display: flex;
   height: auto;
   box-shadow: 0 30px 30px -30px lightcoral;
   background-size: cover;
-  margin-top: 10px;
+  margin-top: 20px;
+  left: 0%;
 }
 
 .subTitle {
