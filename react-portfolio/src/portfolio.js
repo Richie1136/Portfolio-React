@@ -26,7 +26,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/Richie1136",
   linkedin: "https://www.linkedin.com/in/richardthagenah",
-  gmail: "richardthagenah0@gmail.com",
+  gmail: "richardthagenah@gmail.com",
   facebook: "https://www.facebook.com/richie.hagenah/",
   twitter: "https://twitter.com/hagenah_richie",
   instagram: "https://www.instagram.com/richie1136/",
