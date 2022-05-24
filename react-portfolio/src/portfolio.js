@@ -12,12 +12,12 @@ const illustration = {
 
 const greeting = {
   username: "Richie Hagenah",
-  title: "Hi all, I'm Richie",
+  title: "Hi all, I'm Richard Hagenah",
   subTitle: emoji(
     "A passionate Full Stack Software Developer having experience of building Web applications with JavaScript / Reactjs / Nodejs / Python and Django. Kenzie Academy Software Enginnering Alum."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/14h7swrGDiX6U9kERokmQew0FaQs47UKRY-b7MIkCldA/edit", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1g5fX1ysAR5xcW4STmYkKOI7wb_ktuMARsOJ6dZxN3n8/edit", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -72,10 +72,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "django",
-      fontAwesomeClassname: "fab fa-django"
     },
     {
       skillName: "npm",
@@ -187,6 +183,17 @@ const bigProjects = {
       image: require("./assets/images/countdown.png"),
       projectName: "Birthday Countdown",
       projectDesc: "Created a birthday countdown using HTML,CSS and JavaScript.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://birthday-count-down.vercel.app"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/cryptoapp.png"),
+      projectName: "Crypto",
+      projectDesc: "Created a Crypto currency application using React as well as rapidApi to fetch information about the crypto currency which includes the name, price, percent change and the market cap. Also you could filter the coins by name. Also using rapidApi to get news about cryptocurrencies.",
       footerLink: [
         {
           name: "Visit Website",

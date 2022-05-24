@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
+import React, { useState, useEffect } from "react";
 import "./Project.css";
 import Button from "../../components/button/Button";
 import { openSource, socialMediaLinks } from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
 export default function Projects() {
   const FailedLoading = () => null;
