@@ -16,7 +16,7 @@ function timeOut() {
     }
   }, 10000);
 }
-var widthScreen = window.screen.width;
+let widthScreen = window.screen.width;
 
 export default function Twitter() {
   const { isDark } = useContext(StyleContext);
@@ -35,7 +35,7 @@ export default function Twitter() {
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName={twitterDetails.userName}
-              options={{ height: 500, width: { widthScreen } }}
+              options={{ height: 700, width: { widthScreen } }}
               placeholder={renderLoader()}
               autoHeight={false}
               borderColor="#fff"

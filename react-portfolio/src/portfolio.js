@@ -11,7 +11,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Richie Hagenah",
+  username: "Richard Hagenah",
   title: "Hi all, I'm Richard Hagenah",
   subTitle: emoji(
     "A passionate Full Stack Software Developer having experience of building Web applications with JavaScript / Reactjs / Nodejs / Python and Django. Kenzie Academy Software Enginnering Alum."
@@ -156,7 +156,7 @@ const workExperiences = {
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
-const openSource = {
+const showGithubProfile = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
@@ -259,7 +259,7 @@ export {
   skillsSection,
   educationInfo,
   workExperiences,
-  openSource,
+  showGithubProfile,
   bigProjects,
   achievementSection,
   contactInfo,

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Project.css";
 import Button from "../../components/button/Button";
-import { openSource, socialMediaLinks } from "../../portfolio";
+import { showGithubProfile, socialMediaLinks } from "../../portfolio";
 import Loading from "../../containers/loading/Loading";
 export default function Projects() {
   const FailedLoading = () => null;
@@ -36,7 +36,7 @@ export default function Projects() {
   }
   if (
     !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
+    showGithubProfile.display
   ) {
     return (
       <Button

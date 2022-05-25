@@ -9,7 +9,7 @@ const StartupProject = () => {
     if (!url) {
       return;
     }
-    var win = window.open(url, "_blank");
+    let win = window.open(url, "_blank");
     win.focus();
   }
 

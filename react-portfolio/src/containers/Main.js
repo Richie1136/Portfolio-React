@@ -25,7 +25,7 @@ const Main = () => {
 
   return (
     <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
+      <StyleProvider value={{ isDark, changeTheme }}>
         <Header />
         <Greeting />
         <Skills />
