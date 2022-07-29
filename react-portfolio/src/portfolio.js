@@ -14,7 +14,7 @@ const greeting = {
   username: "Richard Hagenah",
   title: "Hi all, I'm Richard Hagenah",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer having experience of building Web applications with JavaScript / Reactjs / Nodejs / Python and Django. Kenzie Academy Software Enginnering Alum."
+    "A passionate Full Stack Software Developer having experience of building Web applications with JavaScript / React.js / Node.js / Python and Django. Kenzie Academy Software Enginnering Alum."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1g5fX1ysAR5xcW4STmYkKOI7wb_ktuMARsOJ6dZxN3n8/edit", // Set to empty to hide the button
@@ -168,36 +168,25 @@ const bigProjects = {
   subtitle: "Favorite Projects",
   projects: [
     {
-      image: require("./assets/images/connect4.png"),
-      projectName: "Connect Four",
-      projectDesc: "Built a Connect Four game using HTML,CSS and JavaScript in a 4 person team.",
+      image: require("./assets/images/sports.png"),
+      projectName: "Sports App",
+      projectDesc: "Built a Sports App using React.js and sportsdata.io Api to fetch data about Teams, Players and the current standings in the MLB. Able to filter teams by division",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://connect-four-richie1136.vercel.app"
+          url: "https://sports-app-react.vercel.app"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/countdown.png"),
-      projectName: "Birthday Countdown",
-      projectDesc: "Created a birthday countdown using HTML,CSS and JavaScript.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://birthday-count-down.vercel.app"
-        }
-      ]
-    },
-    {
       image: require("./assets/images/cryptoapp.png"),
       projectName: "Crypto",
-      projectDesc: "Created a Crypto currency application using React as well as rapidApi to fetch information about the crypto currency which includes the name, price, percent change and the market cap. Also you could filter the coins by name. Also using rapidApi to get news about cryptocurrencies.",
+      projectDesc: "Created a Crypto currency application using React as well as rapidApi to fetch information about the crypto currency which includes the name, price, percent change and the market cap. Able to filter coins by name and get news about certain cryptocurrencies using rapidApi.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://birthday-count-down.vercel.app"
+          url: "https://crypto-currency-react-api.vercel.app"
         }
       ]
     }
@@ -215,20 +204,20 @@ const achievementSection = {
     {
       title: "Front-End Web Development Certificate ",
       subtitle:
-        "6 month, Project-based, Front-end Development training.",
+        "6 month, Project-based, Front-end Development training. HTML, CSS, JavaScript, React.js, Redux.js, Node.js, Express, MongoDB, Bootstrap",
       image: require("./assets/images/frontend.png"),
 
     },
     {
       title: "Full-Stack Web Development Certificate",
       subtitle:
-        "12 month, Project-based, Front-end & Back-end Development training.",
+        "12 month, Project-based, Front-end & Back-end Development training. Python, Django, Django Rest Framework and SQL",
       image: require("./assets/images/fullstack.png"),
     },
     {
       title: "IBM z/OS Pre-apprenticeship badges",
       subtitle:
-        "Took a self-paced IBM apprenticeship where i learned about the IBM Mainframe.",
+        "Completed a 110+ hour self-paced online program, successfully completing 9 IBM z/OS badges designed to provide foundational mainframe knowledge.",
       image: require("./assets/images/ibm.png"),
     },
   ],
