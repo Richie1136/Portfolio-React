@@ -1,5 +1,5 @@
-import React from "react";
 import "./AchievementCard.css";
+import React from "react";
 
 const AchivementCard = ({ cardInfo, isDark }) => {
   function openUrlInNewTab(url, name) {

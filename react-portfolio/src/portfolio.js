@@ -102,7 +102,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Kenzie Academy",
-      logo: require("./assets/images/kenzie.png"),
+      logo: require("./assets/images/kenzie.png").default,
       subHeader: "Software Engineering",
       duration: "July 2020 - July 2021",
       desc: "Enrolled in a 12 month Full-Stack Software Engineering Program.",
@@ -123,7 +123,7 @@ const workExperiences = {
     {
       role: "Team Member",
       company: "BestYetMarket",
-      companylogo: require("./assets/images/bestlogo.png"),
+      companylogo: require("./assets/images/bestlogo.png").default,
       date: "June 2017 – February 2021",
       descBullets: [
         "Developed knowledge about products and sales",
@@ -138,7 +138,7 @@ const workExperiences = {
     {
       role: "Assistant Manager",
       company: "Variety Gold Stamping Corp.",
-      companylogo: require("./assets/images/noimage.png"),
+      companylogo: require("./assets/images/noimage.png").default,
       date: "January 2012 – December 2015",
       descBullets: [
         "Assisted in daily tasks, including running the printing machine and stuffing cards into labels for luggage tags.",
@@ -166,7 +166,7 @@ const bigProjects = {
   subtitle: "Favorite Projects",
   projects: [
     {
-      image: require("./assets/images/sports.png"),
+      image: require("./assets/images/sports.png").default,
       projectName: "Sports App",
       projectDesc: "Built a Sports App using React.js and sportsdata.io Api to fetch data about Teams, Players and the current standings in the MLB. Able to filter teams by division",
       footerLink: [
@@ -178,7 +178,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/cryptoapp.png"),
+      image: require("./assets/images/cryptoapp.png").default,
       projectName: "Crypto",
       projectDesc: "Created a Crypto currency application using React as well as rapidApi to fetch information about the crypto currency which includes the name, price, percent change and the market cap. Able to filter coins by name and get news about certain cryptocurrencies using rapidApi.",
       footerLink: [
@@ -203,20 +203,20 @@ const achievementSection = {
       title: "Front-End Web Development Certificate ",
       subtitle:
         "6 month, Project-based, Front-end Development training. HTML, CSS, JavaScript, React.js, Redux.js, Node.js, Express, MongoDB, Bootstrap",
-      image: require("./assets/images/frontend.png"),
+      image: require("./assets/images/frontend.png").default,
 
     },
     {
       title: "Full-Stack Web Development Certificate",
       subtitle:
         "12 month, Project-based, Front-end & Back-end Development training. Python, Django, Django Rest Framework and SQL",
-      image: require("./assets/images/fullstack.png"),
+      image: require("./assets/images/fullstack.png").default,
     },
     {
       title: "IBM z/OS Pre-apprenticeship badges",
       subtitle:
         "Completed a 110+ hour self-paced online program, successfully completing 9 IBM z/OS badges designed to provide foundational mainframe knowledge.",
-      image: require("./assets/images/ibm.png"),
+      image: require("./assets/images/ibm.png").default,
     },
   ],
   display: true // Set false to hide this section, defaults to true

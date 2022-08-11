@@ -17,10 +17,12 @@ const WorkExperience = () => {
               <h1 className="experience-heading">Experiences</h1>
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
+                  { console.log(card) }
                   return (
                     <ExperienceCard
                       key={i}
                       isDark={isDark}
+
                       cardInfo={{
                         company: card.company,
                         desc: card.desc,
