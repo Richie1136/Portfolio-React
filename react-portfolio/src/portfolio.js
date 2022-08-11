@@ -14,7 +14,7 @@ const greeting = {
   username: "Richard Hagenah",
   title: "Hi all, I'm Richard Hagenah",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer having experience of building Web applications with JavaScript / React.js / Node.js / Python and Django. Kenzie Academy Software Enginnering Alum."
+    "A passionate JavaScript Developer with a focus in React.js, have experience of building Web applications with JavaScript / React.js / Node.js. Kenzie Academy Software Enginnering Alum."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1g5fX1ysAR5xcW4STmYkKOI7wb_ktuMARsOJ6dZxN3n8/edit", // Set to empty to hide the button
@@ -27,9 +27,7 @@ const socialMediaLinks = {
   github: "https://github.com/Richie1136",
   linkedin: "https://www.linkedin.com/in/richardthagenah",
   gmail: "richardthagenah@gmail.com",
-  facebook: "https://www.facebook.com/richie.hagenah/",
   twitter: "https://twitter.com/hagenah_richie",
-  instagram: "https://www.instagram.com/richie1136/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false

@@ -47,8 +47,6 @@ export default function Skills() {
                   steps={[
                     "Ethusiastic Dev 🛑",
                     1000,
-                    "Full Stack Developer 💻",
-                    1000,
                     "Front End Developer 💻",
                     1000,
                     "React Developer 💻",
