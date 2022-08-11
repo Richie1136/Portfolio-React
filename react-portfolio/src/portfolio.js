@@ -137,7 +137,7 @@ const workExperiences = {
         "Effectively communicated with coworkers and management to collaborate on work and cross-trained to assist other departments.",
         "Managed the quality of products presented on the aisle shelves.",
         "Followed directions and met expectations set by team lead and manager in a timely manner.",
-        "Breakdown of trucks and retrieved carts."
+        "Breakdown of trucks and retrieved shopping carts."
       ]
     },
     {
