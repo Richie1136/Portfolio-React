@@ -1,14 +1,13 @@
-import React from "react";
 import "./Top.css";
 
 
 const Top = () => {
-  function TopEvent() {
+  const TopEvent = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
   // When the user scrolls down 20px from the top of the document, show the button
-  function scrollFunction() {
+  const scrollFunction = () => {
     if (
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
@@ -18,10 +17,10 @@ const Top = () => {
       document.getElementById("topButton").style.visibility = "hidden";
     }
   }
-  window.onscroll = function () {
+  window.onscroll = () => {
     scrollFunction();
   };
-  window.onload = function () {
+  window.onload = () => {
     scrollFunction();
   }; //To make sure that this button is not visible at starting.
   // When the user clicks on the button, scroll to the top of the document

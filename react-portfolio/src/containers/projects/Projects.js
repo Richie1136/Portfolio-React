@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Project.css";
 import Button from "../../components/button/Button";
 import { showGithubProfile, socialMediaLinks } from "../../portfolio";
-import Loading from "../../containers/loading/Loading";
 export default function Projects() {
   const FailedLoading = () => null;
-  const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
 
   useEffect(() => {
@@ -31,7 +29,7 @@ export default function Projects() {
     getRepoData();
   }, []);
 
-  function setrepoFunction(array) {
+  const setrepoFunction = (array) => {
     setrepo(array);
   }
   if (

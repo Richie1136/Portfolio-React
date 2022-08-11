@@ -1,4 +1,3 @@
-import React from "react";
 import { Suspense, useContext } from "react";
 import "./twitter.css";
 import Loading from "../loading/Loading";
@@ -10,8 +9,8 @@ const renderLoader = () => <Loading />;
 const cantDisplayError =
   "<div className='centerContent'><h2>Can't load? Check privacy protection settings</h2></div>";
 
-function timeOut() {
-  setTimeout(function () {
+const timeOut = () => {
+  setTimeout(() => {
     if (!document.getElementById("twitter").innerHTML.includes("iframe")) {
       document.getElementById("twitter").innerHTML = cantDisplayError;
     }
@@ -22,35 +21,28 @@ let widthScreen = window.screen.width;
 export default function Twitter() {
   const { isDark } = useContext(StyleContext);
 
-  if (!twitterDetails.display) {
-    return null;
-  }
   if (!twitterDetails.userName) {
     console.error("Twitter username for twitter section is missing");
   }
-  if (twitterDetails.userName) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <div className="tw-main-div" id="twitter">
-          <div className="centerContent">
-            <TwitterTimelineEmbed
-              sourceType="profile"
-              screenName={twitterDetails.userName}
-              options={{ height: 700, width: { widthScreen } }}
-              placeholder={renderLoader()}
-              autoHeight={false}
-              borderColor="#fff"
-              key={isDark ? "1" : "2"}
-              theme={isDark ? "dark" : "light"}
-              noFooter={true}
-              onload={timeOut()}
-            />
-          </div>
+  return (
+    <Suspense fallback={renderLoader()}>
+      <div className="tw-main-div" id="twitter">
+        <div className="centerContent">
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName={twitterDetails.userName}
+            options={{ height: 700, width: { widthScreen } }}
+            placeholder={renderLoader()}
+            autoHeight={false}
+            borderColor="#fff"
+            key={isDark ? "1" : "2"}
+            theme={isDark ? "dark" : "light"}
+            noFooter={true}
+            onload={timeOut()}
+          />
         </div>
-      </Suspense>
-    );
-  } else {
-    return null;
-  }
+      </div>
+    </Suspense>
+  );
 }
 

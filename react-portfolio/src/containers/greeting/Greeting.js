@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.css";
@@ -13,9 +13,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 const Greeting = () => {
   const { isDark } = useContext(StyleContext);
-  if (!greeting.displayGreeting) {
-    return null;
-  }
+
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">

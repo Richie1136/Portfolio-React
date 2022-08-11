@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import StyleContext from "../../contexts/StyleContext";
 import "./ToggleSwitch.css";
 

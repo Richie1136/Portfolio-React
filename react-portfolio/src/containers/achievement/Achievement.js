@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./Achievement.css";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
 import { achievementSection } from "../../portfolio";
@@ -7,9 +7,6 @@ import StyleContext from "../../contexts/StyleContext";
 
 const Achievement = () => {
   const { isDark } = useContext(StyleContext);
-  if (!achievementSection.display) {
-    return null;
-  }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="achievements">

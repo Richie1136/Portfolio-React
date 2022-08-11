@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./StartupProjects.css";
 import { bigProjects } from "../../portfolio";
 import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 const StartupProject = () => {
-  function openUrlInNewTab(url) {
+  const openUrlInNewTab = (url) => {
     if (!url) {
       return;
     }

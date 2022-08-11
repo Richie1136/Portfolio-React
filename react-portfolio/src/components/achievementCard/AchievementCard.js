@@ -1,8 +1,8 @@
 import "./AchievementCard.css";
-import React from "react";
 
 const AchivementCard = ({ cardInfo, isDark }) => {
   function openUrlInNewTab(url, name) {
+    console.log(name)
     if (!url) {
       console.log(`URL for ${name} not found`);
       return;

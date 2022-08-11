@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Headroom from "react-headroom";
 import "./Header.css";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -30,7 +30,6 @@ const Header = () => {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{ color: "white" }}
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { illustration, skillsSection } from "../../portfolio";
@@ -10,9 +10,7 @@ import Typical from 'react-typical'
 
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
-  if (!skillsSection.display) {
-    return null;
-  }
+
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">

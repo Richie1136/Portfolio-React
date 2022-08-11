@@ -1,4 +1,4 @@
-import React, { useState, createRef } from "react";
+import { useState, createRef } from "react";
 import "./ExperienceCard.css";
 import ColorThief from "colorthief";
 
@@ -7,12 +7,12 @@ const ExperienceCard = ({ cardInfo, isDark }) => {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
-  function getColorArrays() {
+  const getColorArrays = () => {
     const colorThief = new ColorThief();
     setColorArrays(colorThief.getColor(imgRef.current));
   }
 
-  function rgb(values) {
+  const rgb = (values) => {
     return typeof values === "undefined"
       ? null
       : "rgb(" + values.join(", ") + ")";
@@ -20,15 +20,14 @@ const ExperienceCard = ({ cardInfo, isDark }) => {
 
   const GetDescBullets = ({ descBullets, isDark }) => {
     return descBullets
-      ? descBullets.map((item, i) => (
+      && descBullets.map((item, i) => (
         <li
           key={i}
           className={isDark ? "subTitle dark-mode-text" : "subTitle"}
         >
           {item}
         </li>
-      ))
-      : null;
+      ));
   };
 
   return (
