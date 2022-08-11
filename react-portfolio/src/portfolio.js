@@ -93,15 +93,27 @@ const educationInfo = {
   display: true,
   schools: [
     {
+      schoolName: "Franklin Apprenticeships",
+      logo: require("./assets/images/franklin-pre-apprenticeship.png").default,
+      subHeader: "Franklin Apprentice",
+      duration: "Aug 2021 - Oct 2021",
+      desc: "Completed a 110+ hour self-paced online program, successfully completing 9 IBM z/OS badges designed to provide foundational mainframe knowledge.",
+      descBullets: [
+        "Gained a good understanding of introductory enterprise computing and mainframe commands and panels.",
+        "Achieved a basic understanding of system programming.",
+        "Demonstrated soft skills for design thinking, agile, and professional skills (including problem-solving and collaboration).",
+      ]
+    },
+    {
       schoolName: "Kenzie Academy",
       logo: require("./assets/images/kenzie.png").default,
       subHeader: "Software Engineering",
       duration: "July 2020 - July 2021",
       desc: "Enrolled in a 12 month Full-Stack Software Engineering Program.",
       descBullets: [
-        "Established foundations in Front-end and Back-end development.",
-        "Productive and efficient member of a remote agile team.",
-        "Gathered requirements, met deadlines, and created real-world applications involving virtual environments, OOP, building and user authentication systems."
+        "Excelled in an in-depth 12-month, project-based, Full-Stack Software Engineering program.",
+        "Gathered requirements, met deadlines, and created real-world applications involving virtual environments, OOP, building and user authentication systems as a member of a remote agile team.",
+        "Developed knowledge in Object-oriented programming, development, testing and debugging code, as well as designing interfaces.",
       ]
     },
   ]
