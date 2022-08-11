@@ -130,13 +130,14 @@ const workExperiences = {
       companylogo: require("./assets/images/bestlogo.png").default,
       date: "June 2017 – February 2021",
       descBullets: [
-        "Developed knowledge about products and sales",
-        "Observed and organized departments.Effectively communicated with coworkers and management to collaborate on work.",
-        "Provided exceptional customer service during high-volume, fast-paced operations",
+        "Developed knowledge about products and sales.",
+        "Provided exceptional customer service during high-volume, fast-paced operations.",
+        "Developed customer relationships through friendly interactions and consistent appreciation.",
+        "Stock shelves, cases, bins and tables with new or transferred merchandise.",
+        "Effectively communicated with coworkers and management to collaborate on work and cross-trained to assist other departments.",
         "Managed the quality of products presented on the aisle shelves.",
         "Followed directions and met expectations set by team lead and manager in a timely manner.",
-        "Cross - trained to assist other departments.",
-        "Breakdown of trucks and retrieve carts."
+        "Breakdown of trucks and retrieved carts."
       ]
     },
     {
