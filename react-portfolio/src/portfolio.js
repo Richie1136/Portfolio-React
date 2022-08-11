@@ -1,13 +1,9 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true
 };
 
 const greeting = {
@@ -17,8 +13,8 @@ const greeting = {
     "A passionate JavaScript Developer with a focus in React.js, have experience of building Web applications with JavaScript / React.js / Node.js. Kenzie Academy Software Enginnering Alum."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/1g5fX1ysAR5xcW4STmYkKOI7wb_ktuMARsOJ6dZxN3n8/edit", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://docs.google.com/document/d/1g5fX1ysAR5xcW4STmYkKOI7wb_ktuMARsOJ6dZxN3n8/edit",
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -28,9 +24,8 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/richardthagenah",
   gmail: "richardthagenah@gmail.com",
   twitter: "https://twitter.com/hagenah_richie",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+
+  display: true
 };
 
 // Skills Section
@@ -42,9 +37,6 @@ const skillsSection = {
       "⚡ Develop highly interactive Front end / User Interfaces for your web applications."
     ),
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
@@ -92,13 +84,13 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-git"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "Kenzie Academy",
@@ -118,7 +110,7 @@ const educationInfo = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
       role: "Team Member",
@@ -151,15 +143,10 @@ const workExperiences = {
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
 const showGithubProfile = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
-
-// Some big projects you have worked on
 
 const bigProjects = {
   title: "Projects",
@@ -174,7 +161,6 @@ const bigProjects = {
           name: "Visit Website",
           url: "https://sports-app-react.vercel.app"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
@@ -189,7 +175,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
@@ -200,11 +186,10 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Front-End Web Development Certificate ",
+      title: "IBM z/OS Pre-apprenticeship badges",
       subtitle:
-        "6 month, Project-based, Front-end Development training. HTML, CSS, JavaScript, React.js, Redux.js, Node.js, Express, MongoDB, Bootstrap",
-      image: require("./assets/images/frontend.png").default,
-
+        "Completed a 110+ hour self-paced online program, successfully completing 9 IBM z/OS badges designed to provide foundational mainframe knowledge.",
+      image: require("./assets/images/ibm.png").default,
     },
     {
       title: "Full-Stack Web Development Certificate",
@@ -213,13 +198,14 @@ const achievementSection = {
       image: require("./assets/images/fullstack.png").default,
     },
     {
-      title: "IBM z/OS Pre-apprenticeship badges",
+      title: "Front-End Web Development Certificate ",
       subtitle:
-        "Completed a 110+ hour self-paced online program, successfully completing 9 IBM z/OS badges designed to provide foundational mainframe knowledge.",
-      image: require("./assets/images/ibm.png").default,
+        "6 month, Project-based, Front-end Development training. HTML, CSS, JavaScript, React.js, Redux.js, Node.js, Express, MongoDB, Bootstrap",
+      image: require("./assets/images/frontend.png").default,
+
     },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 
@@ -235,8 +221,8 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "hagenah_richie", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "hagenah_richie",
+  display: true
 };
 
 export {
