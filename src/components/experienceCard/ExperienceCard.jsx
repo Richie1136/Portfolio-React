@@ -1,0 +1,87 @@
+import { useState, createRef } from "react";
+import "./ExperienceCard.css";
+import ColorThief from "colorthief";
+
+
+const ExperienceCard = ({ cardInfo, isDark }) => {
+  const { company, role, date, desc, descBullets, companylogo } = cardInfo
+  const [colorArrays, setColorArrays] = useState([]);
+  const imgRef = createRef();
+
+  const getColorArrays = () => {
+    const colorThief = new ColorThief();
+    setColorArrays(colorThief.getColor(imgRef.current));
+  }
+
+  const rgb = (values) => {
+    return typeof values === "undefined"
+      ? null
+      : "rgb(" + values.join(", ") + ")";
+  }
+
+  const GetDescBullets = ({ descBullets, isDark }) => {
+    return descBullets
+      && descBullets.map((item, i) => (
+        <li
+          key={i}
+          className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+        >
+          {item}
+        </li>
+      ));
+  };
+
+  return (
+    <div className={isDark ? "experience-card-dark" : "experience-card"}>
+      <div style={{ background: rgb(colorArrays) }} className="experience-banner">
+        <div className="experience-blurred_div"></div>
+        <div className="experience-div-company">
+          <h5 className="experience-text-company">{company}</h5>
+        </div>
+
+        <img
+          crossOrigin={"anonymous"}
+          ref={imgRef}
+          className="experience-roundedimg"
+          src={companylogo}
+          alt={company}
+          onLoad={() => getColorArrays()}
+        />
+      </div>
+      <div className="experience-text-details">
+        <h5
+          className={
+            isDark
+              ? "experience-text-role dark-mode-text"
+              : "experience-text-role"
+          }
+        >
+          {role}
+        </h5>
+        <h5
+          className={
+            isDark
+              ? "experience-text-date dark-mode-text"
+              : "experience-text-date"
+          }
+        >
+          {date}
+        </h5>
+        <p
+          className={
+            isDark
+              ? "subTitle experience-text-desc dark-mode-text"
+              : "subTitle experience-text-desc"
+          }
+        >
+          {desc}
+        </p>
+        <ul>
+          <GetDescBullets descBullets={descBullets} isDark={isDark} />
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default ExperienceCard
