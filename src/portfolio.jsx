@@ -2,7 +2,7 @@ import emoji from "react-easy-emoji";
 import Franklin from "./assets/images/franklin-pre-apprenticeship.png";
 import Kenzie from "./assets/images/kenzie.png";
 import Best from "./assets/images/bestlogo.png";
-import NoImage from "./assets/images/noimage.png";
+import NYL from "./assets/images/NYL.png";
 import SportsProject from "./assets/images/sports.png";
 import CryptoProject from "./assets/images/cryptoapp.png";
 import FullStack from "./assets/images/fullstack.png";
@@ -138,7 +138,7 @@ const workExperiences = {
     {
       role: "Software Engineer (Frontend) Consultant",
       company: "New York Life Insurance Company",
-      companylogo: NoImage,
+      companylogo: NYL,
       date: "January 2023 – May 2026",
       descBullets: [
         "Developed a centralized design color system using Storybook, improving UI consistency and streamlining collaboration across teams.",
