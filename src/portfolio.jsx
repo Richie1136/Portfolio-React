@@ -136,6 +136,18 @@ const workExperiences = {
   display: true,
   experience: [
     {
+      role: "Software Engineer (Frontend) Consultant",
+      company: "New York Life Insurance Company",
+      companylogo: NoImage,
+      date: "January 2023 – May 2026",
+      descBullets: [
+        "Developed a centralized design color system using Storybook, improving UI consistency and streamlining collaboration across teams.",
+        "Contributed to the implementation of Storyblok CMS, enabling the business team to independently manage application content without developer involvement.",
+        "Built React and Redux frontend functionality for a new Individual Disability Insurance feature, improving usability and user experience.",
+        "Owned triage and resolution of production and non-production defects within the Platform Maintenance team, supporting QA, business stakeholders, and field operations."
+      ]
+    },
+    {
       role: "Team Member",
       company: "BestYetMarket",
       companylogo: Best,
@@ -150,20 +162,7 @@ const workExperiences = {
         "Followed directions and met expectations set by team lead and manager in a timely manner.",
         "Breakdown of trucks and retrieved shopping carts."
       ]
-    },
-    {
-      role: "Assistant Manager",
-      company: "Variety Gold Stamping Corp.",
-      companylogo: NoImage,
-      date: "January 2012 – December 2015",
-      descBullets: [
-        "Assisted in daily tasks, including running the printing machine and stuffing cards into labels for luggage tags.",
-        "Any other miscellaneous duties which were needed by the manager.",
-        "Assisted customers via phone and email.",
-        "Processed all orders that came through the mail.",
-        "Helped keep track of inventory.",
-      ]
-    },
+    }
   ]
 };
 
